@@ -12,11 +12,17 @@ const translations = {
         "btn-portfolio": "Ver Portfólio",
         "section-about": "Sobre Mim",
         "about-intro": "Olá! Sou o <strong>Denis</strong>, programador com sólida experiência em Unity, C# e Python. Meu diferencial reside na capacidade de unir o rigor do desenvolvimento de software com a criatividade de sistemas interativos.",
+        "label-age": "Idade:",
+        "val-age": "23 anos",
+        "label-focus": "Foco:",
+        "val-focus": "Mecânicas de Jogo, IA e Arquitetura de Software",
+        "label-tech": "Tecnologias:",
         "awards-title": "Destaques & Prêmios",
         "award-lipsync-title": "Prêmio de Inovação LipSync",
-        "award-lipsync-desc": "Premiado com R$ 70.000,00 pelo desenvolvimento de sistema proprietário.",
+        "award-lipsync-desc": "Fui premiado com <strong class='text-glow'>R$ 70.000,00</strong> pelo desenvolvimento de um sistema proprietário de sincronia labial automatizada.",
         "award-article-title": "Pesquisa Científica",
-        "award-article-desc": "Autor de artigo científico publicado sobre tecnologias emergentes."
+        "award-article-desc": "Autor de artigo científico publicado, focando em tecnologias emergentes e soluções técnicas aplicadas à computação.",
+        "footer-text": "&copy; 2024 Denis Ken - Desenvolvedor Unity"
     },
     en: {
         "nav-home": "Home",
@@ -24,15 +30,21 @@ const translations = {
         "nav-projects": "Projects",
         "nav-awards": "Awards",
         "hero-title": "Unity Developer",
-        "hero-subtitle": "Expert in C#, Interactive Systems, and LipSync",
+        "hero-subtitle": "Expert in C#, Interactive Systems and LipSync",
         "btn-portfolio": "View Portfolio",
         "section-about": "About Me",
         "about-intro": "Hi! I'm <strong>Denis</strong>, a programmer with solid experience in Unity, C#, and Python. My strength lies in combining software development rigor with the creativity of interactive systems.",
+        "label-age": "Age:",
+        "val-age": "23 years old",
+        "label-focus": "Focus:",
+        "val-focus": "Game Mechanics, AI and Software Architecture",
+        "label-tech": "Technologies:",
         "awards-title": "Highlights & Awards",
         "award-lipsync-title": "LipSync Innovation Award",
-        "award-lipsync-desc": "Awarded R$ 70,000.00 for developing a proprietary lip-sync system.",
+        "award-lipsync-desc": "Awarded <strong class='text-glow'>R$ 70,000.00</strong> for developing a proprietary automated lip-sync system.",
         "award-article-title": "Scientific Research",
-        "award-article-desc": "Published scientific author focusing on emerging technologies."
+        "award-article-desc": "Published scientific author, focusing on emerging technologies and technical solutions applied to computing.",
+        "footer-text": "&copy; 2024 Denis Ken - Unity Developer"
     }
 };
 
@@ -44,7 +56,7 @@ const projects = [
             pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
             en: "Award-winning Unity tool for automated lip-syncing." 
         },
-        images: ["images/lipsync1.jpg", "images/lipsync2.jpg", "images/lipsync3.jpg", "images/lipsync4.jpg"]
+        images: ["images/lipsync1.png", "images/lipsync2.png", "images/lipsync3.png", "images/lipsync4.png"]
     }
     ,
     {
@@ -53,7 +65,7 @@ const projects = [
             pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
             en: "Award-winning Unity tool for automated lip-syncing." 
         },
-        images: ["images/lipsync1.jpg", "images/lipsync2.jpg", "images/lipsync3.jpg", "images/lipsync4.jpg"]
+        images: ["images/owi_1.png", "images/owi_2.png", "images/owi_3.png"]
     },
     ,
     {
@@ -62,7 +74,7 @@ const projects = [
             pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
             en: "Award-winning Unity tool for automated lip-syncing." 
         },
-        images: ["images/lipsync1.jpg", "images/lipsync2.jpg", "images/lipsync3.jpg", "images/lipsync4.jpg"]
+        images: ["images/tiki_1.png", "images/tiki_2.png", "images/tiki_3.png", "images/tiki_4.png"]
     },
     {
         title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
@@ -70,7 +82,7 @@ const projects = [
             pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
             en: "Award-winning Unity tool for automated lip-syncing." 
         },
-        images: ["images/lipsync1.jpg", "images/lipsync2.jpg", "images/lipsync3.jpg", "images/lipsync4.jpg"]
+        images: ["images/conarec_1.png", "images/conarec_2.png", "images/conarec_3.png", "images/conarec_4.png"]
     },
     {
         title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
@@ -78,7 +90,7 @@ const projects = [
             pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
             en: "Award-winning Unity tool for automated lip-syncing." 
         },
-        images: ["images/lipsync1.jpg", "images/lipsync2.jpg", "images/lipsync3.jpg", "images/lipsync4.jpg"]
+        images: ["images/lipsync1.png", "images/lipsync2.png", "images/lipsync3.png", "images/lipsync4.png"]
     }
     // Adicione os outros 4 projetos seguindo esse modelo {pt: "", en: ""}
 ];
