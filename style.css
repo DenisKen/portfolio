@@ -1,0 +1,153 @@
+:root {
+    /* NOVA PALETA DARK SPACE */
+    --bg-main: #0a0f1e;        /* Fundo super escuro */
+    --bg-card: #111827;       /* Fundo do cartão ligeiramente mais claro */
+    --bg-nav: rgba(10, 15, 30, 0.95); /* Nav escura semi-transparente */
+    --primary-sparkle: #00f2fe; /* Azul Ciano Cintilante */
+    --primary-hover: #4facfe;   /* Azul ligeiramente mais escuro para hover */
+    --text-main: #e2e8f0;       /* Cinza muito claro (quase branco) */
+    --text-muted: #94a3b8;     /* Cinza médio para textos secundários */
+    --accent-gold: #eab308;     /* Mantido para ícones de prêmio */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--bg-main); 
+    color: var(--text-main); 
+    line-height: 1.6; 
+}
+
+.container { max-width: 1100px; margin: auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.section-title { text-align: center; margin-bottom: 50px; font-weight: 800; font-size: 2.5rem; color: #fff; }
+
+/* utilitários */
+.dark-bg-alt { background-color: #0d1225; }
+.card-dark { background-color: var(--bg-card); border: 1px solid #1f2937; padding: 30px; border-radius: 12px; }
+.text-glow { color: var(--primary-sparkle); text-shadow: 0 0 10px rgba(0, 242, 254, 0.7); }
+
+/* Navbar - DARK */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; 
+    background: var(--bg-nav); position: fixed; width: 100%; top: 0; z-index: 1000; 
+    border-bottom: 1px solid #1f2937; backdrop-filter: blur(5px); }
+.logo { font-weight: 800; font-size: 1.5rem; color: #fff; }
+.logo span { color: var(--primary-sparkle); text-shadow: 0 0 10px var(--primary-sparkle); }
+.nav-links { display: flex; list-style: none; }
+.nav-links li a { text-decoration: none; color: var(--text-main); margin-left: 25px; font-weight: 600; transition: 0.3s; }
+.nav-links li a:hover { color: var(--primary-sparkle); }
+
+/* Hero - ESTRELAS */
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; 
+    text-align: center; color: white; padding-top: 60px; position: relative; overflow: hidden; }
+
+/* Efeito de Estrelas CSS Puro */
+.starry-bg {
+    background-color: #05070a;
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),
+        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; font-weight: 800; text-shadow: 0 0 15px rgba(255,255,255,0.5); }
+.hero p { color: var(--text-muted); font-size: 1.2rem; }
+.hero-btns { margin-top: 30px; display: flex; gap: 15px; justify-content: center; }
+
+/* Botões Cintilantes */
+.btn { padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: 0.3s; cursor: pointer; display: inline-block; }
+.primary { background: var(--primary-sparkle); color: #0a0f1e; border: 2px solid var(--primary-sparkle); box-shadow: 0 0 15px rgba(0, 242, 254, 0.5); }
+.primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); box-shadow: 0 0 25px rgba(0, 242, 254, 0.8); }
+.secondary { border: 2px solid var(--text-main); color: var(--text-main); }
+.secondary:hover { border-color: var(--primary-sparkle); color: var(--primary-sparkle); box-shadow: 0 0 10px rgba(0, 242, 254, 0.3); }
+
+/* Sobre */
+.about-text p { margin-bottom: 15px; font-size: 1.1rem; color: var(--text-main); }
+.about-text strong { color: var(--primary-sparkle); }
+.info-list { list-style: none; margin-top: 20px; }
+.info-list li { margin-bottom: 10px; color: var(--text-muted); }
+.info-list li strong { color: #fff; margin-right: 5px; }
+
+/* Conquistas - DARK */
+.awards-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.award-icon { font-size: 3rem; margin-bottom: 20px; color: var(--accent-gold); }
+.card h3 { margin-bottom: 10px; color: #fff; }
+.card p { color: var(--text-muted); }
+.highlight-glow { border: 1px solid var(--primary-sparkle); box-shadow: 0 0 20px rgba(0, 242, 254, 0.2); }
+
+/* Projetos - DARK */
+.project-card { background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid #1f2937; transition: 0.3s; }
+.project-card:hover { transform: translateY(-5px); border-color: var(--primary-sparkle); box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15); }
+.project-thumb { width: 100%; height: 220px; object-fit: cover; cursor: pointer; border-bottom: 1px solid #1f2937; }
+.project-info { padding: 20px; }
+.project-info h3 { color: #fff; margin-bottom: 8px; }
+.project-info p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; height: 60px; overflow: hidden; } /* Limita altura da descrição */
+.gallery-thumbs { display: flex; gap: 8px; margin-top: 15px; border-top: 1px solid #1f2937; padding-top: 10px;}
+.thumb-small { width: 60px; height: 45px; object-fit: cover; border-radius: 4px; cursor: pointer; opacity: 0.5; transition: 0.3s; border: 1px solid transparent; }
+.thumb-small:hover { opacity: 1; border-color: var(--primary-sparkle); }
+
+/* Modal - DARK */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); backdrop-filter: blur(10px); }
+.modal-content { position: relative; top: 50%; transform: translateY(-50%); text-align: center; }
+#modal-img { max-width: 90%; max-height: 80vh; border-radius: 8px; border: 2px solid var(--primary-sparkle); box-shadow: 0 0 30px rgba(0, 242, 254, 0.3); }
+.modal-nav { position: absolute; width: 100%; top: 50%; display: flex; justify-content: space-between; padding: 0 30px; transform: translateY(-50%); }
+.modal-nav button { background: rgba(255,255,255,0.1); border: none; color: white; font-size: 2.5rem; cursor: pointer; padding: 10px 15px; border-radius: 50%; transition: 0.3s; }
+.modal-nav button:hover { background: var(--primary-sparkle); color: #000; }
+.close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; transition: 0.3s; }
+.close:hover { color: var(--primary-sparkle); }
+
+/* Footer */
+.footer-dark { text-align: center; padding: 40px 0; background: #05070a; border-top: 1px solid #1f2937; color: var(--text-muted); }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Pode adicionar um menu hamburguer futuramente */
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; }
+    .hero-btns { flex-direction: column; gap: 10px; }
+    .section-title { font-size: 2rem; }
+}
+
+/* Language Switcher - Estilo Neon Ativo */
+.lang-switcher {
+    display: flex;
+    gap: 12px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.btn-lang {
+    background: #111827; /* Fundo condizente com os cards */
+    border: 2px solid #1f2937; 
+    color: var(--text-muted); /* Cor do texto (BR/US) quando apagado */
+    font-size: 0.9rem; /* Tamanho do texto ao lado da bandeira */
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    filter: grayscale(80%); /* Deixa as bandeiras discretas quando inativas */
+    text-transform: uppercase;
+}
+
+/* Efeito de Hover e Botão Selecionado */
+.btn-lang:hover, 
+.btn-lang.active {
+    filter: grayscale(0%); /* Devolve a cor original da bandeira */
+    border-color: var(--primary-sparkle);
+    color: var(--primary-sparkle); /* O texto BR ou US fica azul cintilante */
+    background: rgba(0, 242, 254, 0.05); /* Um leve brilho de fundo */
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.6); /* Brilho no texto */
+}
+
+/* Ajuste no HTML do botão para conter o texto */

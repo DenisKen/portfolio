@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Ken | Unity Developer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Substitua sua <nav> e os textos por isso -->
+<nav class="navbar">
+    <div class="logo">DENIS<span>KEN</span></div>
+    <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav-home">Home</a></li>
+        <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
+        <li><a href="#projetos" data-i18n="nav-projects">Projetos</a></li>
+        <li><a href="#conquistas" data-i18n="nav-awards">Conquistas</a></li>
+    </ul>
+    <div class="lang-switcher">
+        <button onclick="setLanguage('pt')" class="btn-lang">🇧🇷</button>
+        <button onclick="setLanguage('en')" class="btn-lang">🇺🇸</button>
+    </div>
+</nav>
+
+<header id="home" class="hero starry-bg">
+    <div class="hero-content">
+        <h1 data-i18n="hero-title">Desenvolvedor Unity</h1>
+        <p data-i18n="hero-subtitle">Especialista em C#, Sistemas Interativos e LipSync</p>
+        <div class="hero-btns">
+            <a href="#projetos" class="btn primary" data-i18n="btn-portfolio">Ver Portfólio</a>
+            <a href="https://www.linkedin.com/in/denisken/" target="_blank" class="btn secondary">LinkedIn</a>
+        </div>
+    </div>
+</header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-about">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text card-dark">
+                    <p data-i18n="ola">Olá! Sou o <strong data-i18n="denis">Denis</strong>, programador com sólida experiência em Unity, C# e Python. Meu diferencial reside na capacidade de unir o rigor do desenvolvimento de software com a criatividade de sistemas interativos.</p>
+                    <ul class="info-list">
+                        <li><strong>Idade:</strong> 23 anos</li>
+                        <li><strong>Foco:</strong> Mecânicas de Jogo, IA, e Arquitetura de Software</li>
+                        <li><strong>Tecnologias:</strong> Unity 3D/2D, C#, Python, Mobile (iOS/Android)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conquistas" class="section dark-bg-alt">
+        <div class="container">
+            <h2 class="section-title">Destaques & Prêmios</h2>
+            <div class="awards-grid">
+                <div class="card card-dark highlight-glow">
+                    <div class="award-icon">🏆</div>
+                    <h3>Prêmio de Inovação LipSync</h3>
+                    <p>Fui premiado com <strong class="text-glow">R$ 70.000,00</strong> pelo desenvolvimento de um sistema proprietário de sincronia labial automatizada, otimizando fluxos de animação.</p>
+                </div>
+                <div class="card card-dark">
+                    <div class="award-icon">📄</div>
+                    <h3>Pesquisa Científica</h3>
+                    <p>Autor de artigo científico publicado, focando em tecnologias emergentes e soluções técnicas aplicadas à computação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div id="projects-container" class="projects-grid">
+                <!-- Injetado dinamicamente via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Galeria -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="">
+            <div class="modal-nav">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-dark">
+        <p>&copy; 2024 Denis Ken - Desenvolvedor Unity</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
