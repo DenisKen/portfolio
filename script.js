@@ -13,9 +13,9 @@ const translations = {
         "section-about": "Sobre Mim",
         "about-intro": "Olá! Sou o <strong>Denis</strong>, programador com sólida experiência em Unity, C# e Python. Meu diferencial reside na capacidade de unir o rigor do desenvolvimento de software com a criatividade de sistemas interativos.",
         "label-age": "Idade:",
-        "val-age": "23 anos",
+        "val-age": "29 anos",
         "label-focus": "Foco:",
-        "val-focus": "Mecânicas de Jogo, IA e Arquitetura de Software",
+        "val-focus": "Mecânicas de Jogo, Game Design, Soluções Criativas",
         "label-tech": "Tecnologias:",
         "awards-title": "Destaques & Prêmios",
         "award-lipsync-title": "Prêmio de Inovação LipSync",
@@ -35,9 +35,9 @@ const translations = {
         "section-about": "About Me",
         "about-intro": "Hi! I'm <strong>Denis</strong>, a programmer with solid experience in Unity, C#, and Python. My strength lies in combining software development rigor with the creativity of interactive systems.",
         "label-age": "Age:",
-        "val-age": "23 years old",
+        "val-age": "29 years old",
         "label-focus": "Focus:",
-        "val-focus": "Game Mechanics, AI and Software Architecture",
+        "val-focus": "Game Mechanics, Game Design, Creative Solutions",
         "label-tech": "Technologies:",
         "awards-title": "Highlights & Awards",
         "award-lipsync-title": "LipSync Innovation Award",
@@ -51,44 +51,44 @@ const translations = {
 // Projetos com suporte a tradução
 const projects = [
     {
-        title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
+        title: { pt: "BioAtlas - Anatomia Humana", en: "BioAtlas – Human Anatomy" },
         desc: { 
-            pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
-            en: "Award-winning Unity tool for automated lip-syncing." 
+            pt: "Aplicativo de ensino para estudantes de medicina.", 
+            en: "Educational app for medical students." 
         },
-        images: ["images/lipsync1.png", "images/lipsync2.png", "images/lipsync3.png", "images/lipsync4.png"]
+        images: ["images/bioatlas_1.png", "images/bioatlas_2.png", "images/bioatlas_3.png"]
     }
     ,
     {
-        title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
+        title: { pt: "OWI – Olos Web Interactive", en: "OWI – Olos Web Interactive" },
         desc: { 
-            pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
-            en: "Award-winning Unity tool for automated lip-syncing." 
+            pt: "OWI é uma das soluções mais versáteis da plataforma omnichannel da Olos.", 
+            en: "OWI is one of the most versatile solutions in the Olos omnichannel platform." 
         },
         images: ["images/owi_1.png", "images/owi_2.png", "images/owi_3.png"]
     },
     ,
     {
-        title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
+        title: { pt: "TIKI - Cubic Game for Children", en: "TIKI – Cubic Game for Children" },
         desc: { 
-            pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
-            en: "Award-winning Unity tool for automated lip-syncing." 
+            pt: "Cada bloco se comunica com adjacentes, usando métodos recursivos.", 
+            en: "Each cube communicates with adjancentes, using recursive methods." 
         },
         images: ["images/tiki_1.png", "images/tiki_2.png", "images/tiki_3.png", "images/tiki_4.png"]
     },
     {
-        title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
+        title: { pt: "Olos VR - Showroom", en: "Olos VR - Showroom" },
         desc: { 
-            pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
-            en: "Award-winning Unity tool for automated lip-syncing." 
+            pt: "Solução Omnichannel, que integra todo sistema de comunicação.", 
+            en: "Omnichannel solution that integrates the entire communication system." 
         },
         images: ["images/conarec_1.png", "images/conarec_2.png", "images/conarec_3.png", "images/conarec_4.png"]
     },
     {
         title: { pt: "Motor de LipSync Inteligente", en: "Intelligent LipSync Engine" },
         desc: { 
-            pt: "Ferramenta Unity premiada que automatiza sincronia labial.", 
-            en: "Award-winning Unity tool for automated lip-syncing." 
+            pt: "Ferramenta Web premiada que automatiza sincronia labial.", 
+            en: "Award-winning Web tool for automated lip-syncing." 
         },
         images: ["images/lipsync1.png", "images/lipsync2.png", "images/lipsync3.png", "images/lipsync4.png"]
     }
