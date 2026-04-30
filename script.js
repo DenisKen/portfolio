@@ -11,7 +11,7 @@ const translations = {
         "hero-subtitle": "Especialista em C#, Sistemas Interativos e LipSync",
         "btn-portfolio": "Ver Portfólio",
         "section-about": "Sobre Mim",
-        "about-text": "Olá! Sou o Denis, programador com sólida experiência em Unity, C# e Python...",
+        "about-intro": "Olá! Sou o <strong>Denis</strong>, programador com sólida experiência em Unity, C# e Python. Meu diferencial reside na capacidade de unir o rigor do desenvolvimento de software com a criatividade de sistemas interativos.",
         "awards-title": "Destaques & Prêmios",
         "award-lipsync-title": "Prêmio de Inovação LipSync",
         "award-lipsync-desc": "Premiado com R$ 70.000,00 pelo desenvolvimento de sistema proprietário.",
@@ -27,7 +27,7 @@ const translations = {
         "hero-subtitle": "Expert in C#, Interactive Systems, and LipSync",
         "btn-portfolio": "View Portfolio",
         "section-about": "About Me",
-        "about-text": "Hi! I'm Denis, a programmer with solid experience in Unity, C#, and Python...",
+        "about-intro": "Hi! I'm <strong>Denis</strong>, a programmer with solid experience in Unity, C#, and Python. My strength lies in combining software development rigor with the creativity of interactive systems.",
         "awards-title": "Highlights & Awards",
         "award-lipsync-title": "LipSync Innovation Award",
         "award-lipsync-desc": "Awarded R$ 70,000.00 for developing a proprietary lip-sync system.",
@@ -137,18 +137,26 @@ document.querySelector('.close').onclick = closeModal;
 modal.onclick = closeModal; // Fecha ao clicar no fundo
 
 function setLanguage(lang) {
-    // Salva a preferência
     localStorage.setItem('preferredLang', lang);
     
-    // Traduz textos estáticos
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            el.innerText = translations[lang][key];
+            // Usamos innerHTML para que o <strong> funcione
+            el.innerHTML = translations[lang][key]; 
         }
     });
 
-    // Recarrega a vitrine de projetos com o idioma novo
+    // Lógica de classe ativa simplificada
+    const langBtns = document.querySelectorAll('.btn-lang');
+    langBtns.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Se clicou em PT, ativa o primeiro botão, se EN, o segundo
+    if (lang === 'pt') langBtns[0].classList.add('active');
+    else langBtns[1].classList.add('active');
+
     renderProjects(lang);
 }
 
